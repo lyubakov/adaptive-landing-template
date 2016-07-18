@@ -1,0 +1,8 @@
+form.form(method="POST")
+	p.form__header 
+	p.form__description 
+	.form-inputs
+		input(value="Форма последнего блока" type="hidden"  name="form-name")
+		input(placeholder="Как Вас зовут?" name="name").form__input
+		input(placeholder="Контактный телефон"  name="tel").form__input
+	button(type="submit").form__button 

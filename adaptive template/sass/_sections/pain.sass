@@ -1,0 +1,51 @@
+.section_pain
+	background-color: #fff
+
+.pain-list
+	display: flex
+	flex-direction: column
+	+mymed(mscr)
+		flex-direction: row
+		flex-wrap: wrap
+		align-items: baseline
+.pain-list__logo
+	margin-bottom: 10%
+	width: 28.214%
+	+mymed(mscr)
+		width: 38%
+	+mymed(lscr)
+		width: 91px
+.pain-list__item
+	flex-direction: column
+	align-items: center
+	margin-bottom: 14.25%
+	+mymed(mscr)
+		width: 33.33%
+		margin-bottom: 7.23%
+		&:nth-child(n+4)
+			margin-bottom: 0
+	+mymed(lscr)
+		width: auto
+		flex: 1
+		justify-content: space-between
+		margin-bottom: 0
+	+mymed(xscr)
+		margin-left: 30px
+		&:first-child
+			margin-left: 0
+.pain-list__item:first-child
+	margin-top: 0
+.pain-list__item:nth-child(3)
+	.pain-list__logo
+	
+
+.pain-list__item-description
+	text-align: center
+	font-size: 15px
+	font-size: 4.6875vw
+	+ptsans
+	+mymed(mscr)
+		font-size: 15px
+		font-size: 1.95vw
+	+mymed(lscr)
+		font-size: rem(15)

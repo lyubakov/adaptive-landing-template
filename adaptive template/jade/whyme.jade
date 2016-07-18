@@ -1,0 +1,28 @@
+-
+	var whymeLi1 = [
+		[],
+		[],
+		[]
+	]
+-
+	var whymeLi2 = [
+		[],
+		[],
+		[]
+	]
+section.section.section_whyme
+	.container
+		h2(id="whyme").section__header 
+		.whyme__lists
+			ul.whyme-list.whyme-list_1
+				each item in whymeLi1
+					li.whyme-list__item.list-item
+						p.whyme-list__item-number.whyme-list__item-number_1 #{item[0]}
+						p.whyme-list__item-header.whyme-list__item-header_1 #{item[1]}
+						p.whyme-list__item-description.whyme-list__item-description_1 #{item[2]}
+			ul.whyme-list.whyme-list_2
+				each item in whymeLi2
+					li.whyme-list__item.list-item
+						p.whyme-list__item-number.whyme-list__item-number_2 #{item[0]}
+						p.whyme-list__item-header.whyme-list__item-header_2 #{item[1]}
+						p.whyme-list__item-description.whyme-list__item-description_2 #{item[2]}

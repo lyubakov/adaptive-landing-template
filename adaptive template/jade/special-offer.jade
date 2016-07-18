@@ -1,0 +1,49 @@
+-
+	var offer1Li = [
+		[""],
+		[""],
+		[""],
+		[""],
+		[""]
+	]
+-
+	var offer2Li = [
+		[""],
+		[""],
+		[""],
+		[""],
+		[""],
+		[""]
+	]
+section.section.section_offer
+	.container
+		h3(id="offer").section__header.section__header_offer 
+		p.section__description.section__description_offer 
+		.section_offer__content
+			.offer.offer_s
+				.heat
+					p.heat__text 
+				.offer__info
+					p.offer__text 
+					img.offer__image(src="", alt="")
+			.economy
+				img.economy__image(src="", alt="")
+				p.economy__header 
+					span.economy__special 
+			.section_offer__text
+				.offer.offer_l
+					.heat
+						p.heat__text 
+					.offer__info
+						p.offer__text 
+						img.offer__image(src="img/offer/tv.svg", alt="")
+				p.offer-list_header 
+				ul.offer-list.offer-list_includes
+					each item in offer1Li
+						li.offer-list__item.list-item
+							p.offer-list__item-description #{item[0]}
+				p.offer-list_header 
+				ul.offer-list.offer-list_advantages
+					each item in offer2Li
+						li.offer-list__item.list-item
+							p.offer-list__item-description #{item[0]}

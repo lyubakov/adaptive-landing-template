@@ -1,0 +1,18 @@
+-
+	var firstscreenLi = [
+		[],
+		[],
+		[],
+		[],
+		[],
+	]
+
+section(id="top").section.section_firstscreen
+		.carousel
+			each item in firstscreenLi
+				div(class="firstscreen__item firstscreen__item_#{item[0]}")
+					.container.container_firstscreen
+						.item__text-block.item__text-block_firstscreen
+							p.item__header.item__header_firstscreen #{item[1]}
+							p.item__description.item__description_firstscreen #{item[2]}
+							button.button-cta.button-cta_firstscreen.anchor-link(class="button-cta_firstscreen_#{item[0]}" href="##{item[4]}") #{item[3]}

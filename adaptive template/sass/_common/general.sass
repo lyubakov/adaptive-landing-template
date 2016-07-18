@@ -1,0 +1,126 @@
+
+$medium: 768px;
+$large: 1020px;
+$xlarge: 1200px;
+
+=mymed($media) 
+  @if $media == mscr 
+    @media only screen and (min-width: $medium)  
+    	@content 
+  
+  @else if $media == lscr 
+    @media only screen and (min-width: $large)  
+    	@content 
+  
+  @else if $media == xscr 
+    @media only screen and (min-width: $xlarge)  
+    	@content 
+  
+
+html, body
+.clearfix:after 
+	visibility: hidden
+	display: block
+	font-size: 0
+	content: " "
+	clear: both
+	height: 0
+	
+h1, h2, h3, h4, h5, h6 , a, p
+	margin: 0
+	padding: 0
+	font-weight: normal
+	-webkit-font-smoothing: antialiased
+	color: #2f2f2f
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+a
+	text-decoration: none
+	color: inherit
+	&:active
+		outline: none
+	&:hover
+		cursor: pointer
+input, textarea 
+	-webkit-font-smoothing: antialiased
+	outline: none
+	&:active
+		outline: none
+	&:focus 
+		outline: none
+textarea 
+	resize: none
+
+button
+	-webkit-font-smoothing: antialiased
+	&:active, &:focus 
+		outline: none
+	&::-moz-focus-inner 
+  		border: 0
+
+.display
+	display: block
+
+.hide
+	display: none
+
+.flex
+	display: flex
+
+.section
+	padding: 15.225% 6.25%
+	+mymed(mscr)
+		padding: 11.8% 4.4429%
+	+mymed(lscr)
+		padding: 115px 0
+.section__header
+	margin-bottom: 10%
+	text-align: center
+	font-size: 25px
+	font-size: 7.8125vw
+	+proxima
+	+mymed(mscr)
+		font-size: 35px
+		font-size: 4.6vw
+		margin-bottom: 7.89%
+	+mymed(lscr)
+		font-size: rem(35)
+		+proximaL
+.section__description
+	text-align: center
+	margin-bottom: 12.8%
+	font-size: 17px
+	font-size: 5.3vw
+	+ptsans
+	+mymed(mscr)
+		font-size: 17px
+		font-size: 2.23vw
+	+mymed(lscr)
+		font-size: rem(17)
+.list-item
+	display: flex
+.button-cta
+	text-transform: uppercase
+	color: #fff
+	border: none
+	border-radius: 3px
+	background: rgb(126,86,201);
+	background: -moz-linear-gradient(45deg,  rgba(126,86,201,1) 18%, rgba(228,35,66,1) 115%);
+	background: -webkit-linear-gradient(45deg,  rgba(126,86,201,1) 18%,rgba(228,35,66,1) 115%);
+	background: linear-gradient(45deg,  rgba(126,86,201,1) 18%,rgba(228,35,66,1) 115%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e56c9', endColorstr='#e42342',GradientType=1);
+	+ptsansB
+
+	&:hover
+		background: rgb(228,35,66);
+		background: -moz-linear-gradient(45deg,  rgba(228,35,66,1)-15%, rgba(129,84,196,1) 82%);
+		background: -webkit-linear-gradient(45deg,  rgba(228,35,66,1)-15%,rgba(129,84,196,1) 82%);
+		background: linear-gradient(45deg,  rgba(228,35,66,1) -15%,rgba(129,84,196,1) 82%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42342', endColorstr='#8154c4',GradientType=1 );
+	&:active
+		background: #9e469d
+
+

@@ -1,0 +1,22 @@
+-
+	var stepsLi = [
+		[],
+		[],
+		[],
+		[],
+		[],
+	]
+section(id="steps").section.section_steps
+	.container
+		h3.section__header.section__header_steps 
+		ul.steps-list
+			li.steps-list__item.list-item
+				p.item__number.item__number_steps 
+				p.item__header.item__header_steps 
+				p.item__description.item__description_steps 
+				button.button-cta.button-cta_steps.modalCall 
+			each item in stepsLi
+				li.steps-list__item.list-item
+					p.item__number.item__number_steps #{item[0]}
+					p.item__header.item__header_steps #{item[1]}
+					p.item__description.item__description_steps #{item[2]}

@@ -1,0 +1,316 @@
+.section_firstscreen
+	padding: 0
+	padding-top: 18%
+	position: relative
+	+mymed(mscr)
+		padding-top: 20%
+	+mymed(lscr)
+		padding-top: 126px
+.container_firstscreen
+	display: flex
+.item__text-block
+	width: 300px
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	+mymed(mscr)
+		padding: 10.8% 4.4429%
+		width: 460px
+		align-items: flex-start
+		margin-left: 0
+	+mymed(lscr)
+		width: 43.5%
+		padding: 0
+		align-self: center
+.item__header_firstscreen
+	padding-top: 70px
+	margin-bottom: 20px
+	font-size: 24px
+	line-height: 39px
+	+proxima
+	+mymed(mscr)
+		font-size: 36px
+		text-align: left
+		padding-top: 0
+		margin-bottom: 6.5%
+	+mymed(lscr)
+		font-size: rem(36)
+		margin-bottom: 30px
+		+proximaL
+.item__description_firstscreen
+	margin-bottom: 30px
+	font-size: 17px
+	line-height: 25px
+	+ptsans
+	+mymed(mscr)
+		font-size: 17px
+		text-align: left
+		margin-bottom: 7.6%
+		padding-right: 40%
+	+mymed(lscr)
+		font-size: rem(17)
+		padding-right: 0
+		margin-bottom: 40px
+.button-cta_firstscreen
+	height: 60px
+	+ptsans
+	font-size: 17px
+	text-transform: initial
+	+mymed(mscr)
+		font-size: 17px
+		padding: 4% 10%
+		display: flex
+	+mymed(lscr)
+		font-size: rem(17)
+.firstscreen__item
+	+mymed(mscr)
+		padding-bottom: 0
+		min-height: 680px
+	+mymed(lscr)
+		min-height: 860px
+		display: flex
+.firstscreen__item_1
+	background: url('/img/firstscreen/1-s.jpg') center bottom no-repeat
+	max-width: 100%
+	height: auto
+	min-height: 820px
+	padding-bottom: 0
+	+mymed(mscr)
+		background: url('/img/firstscreen/1-m.jpg') center bottom no-repeat
+		max-width: 100%
+		height: auto
+		min-height: 680px
+	+mymed(lscr)
+		background: url('/img/firstscreen/1-l.jpg') center bottom no-repeat
+		max-width: 100%
+		min-height: 860px
+		height: auto
+		
+.firstscreen__item_2
+	background: url('/img/firstscreen/2-s.jpg') center bottom no-repeat
+	max-width: 100%
+	height: auto
+	min-height: 820px
+	padding-bottom: 0
+	.item__header_firstscreen
+		padding-left: 10%
+		padding-right: 10%
+	.item__description_firstscreen
+		padding: 0 17%
+	+mymed(mscr)
+		background: url('/img/firstscreen/2-m.jpg') center bottom no-repeat
+		max-width: 100%
+		height: auto
+		min-height: 680px
+		.item__header_firstscreen
+			padding: 0
+			padding-right: 51px
+		.item__description_firstscreen
+			padding: 0
+			padding-right: 260px
+	+mymed(lscr)
+		background: url('/img/firstscreen/2-l.jpg') 75% bottom no-repeat
+		max-width: 100%
+		min-height: 860px
+		height: auto
+		.item__header_firstscreen
+			padding: 0
+		.item__description_firstscreen
+			padding: 0
+
+.firstscreen__item_3
+	background: url('/img/firstscreen/3-s.jpg') center bottom no-repeat
+	max-width: 100%
+	height: auto
+	min-height: 820px
+	padding-bottom: 0
+	.item__header_firstscreen
+		padding-left: 10%
+		padding-right: 10%
+	.item__description_firstscreen
+		padding: 0 17%
+	+mymed(mscr)
+		background: url('/img/firstscreen/3-m.jpg') center bottom no-repeat
+		max-width: 100%
+		height: auto
+		min-height: 680px
+		.item__header_firstscreen
+			padding: 0
+		.item__description_firstscreen
+			padding: 0
+			padding-right: 193px
+	+mymed(lscr)
+		background: url('/img/firstscreen/3-l.jpg') 62% bottom no-repeat
+		max-width: 100%
+		min-height: 860px
+		height: auto
+		.item__header_firstscreen
+			padding: 0
+		.item__description_firstscreen
+			padding: 0
+		.item__text-block
+			align-self: flex-start
+			padding-top: 195px
+.firstscreen__item_4
+	background: url('/img/firstscreen/4-s.jpg') 52% bottom no-repeat
+	max-width: 100%
+	height: auto
+	min-height: 820px
+	padding-bottom: 0
+	.item__header_firstscreen
+		padding-left: 6%
+		padding-right: 6%
+	.item__description_firstscreen
+		padding: 0 17%
+	+mymed(mscr)
+		background: url('/img/firstscreen/4-m.jpg') center bottom no-repeat
+		max-width: 100%
+		height: auto
+		min-height: 680px
+		.item__header_firstscreen
+			padding: 0
+		.item__description_firstscreen
+			padding: 0
+			padding-right: 330px
+	+mymed(lscr)
+		background: url('/img/firstscreen/4-l.jpg') center bottom no-repeat
+		max-width: 100%
+		min-height: 860px
+		height: auto
+		.item__header_firstscreen
+			padding: 0
+		.item__description_firstscreen
+			padding: 0
+		.item__text-block
+			align-self: flex-start
+			padding-top: 97px
+	+mymed(xscr)
+		background: url('/img/firstscreen/4-l.jpg') 87% bottom no-repeat
+		max-width: 100%
+		min-height: 860px
+		height: auto
+		.item__text-block
+			align-self: flex-start
+			padding-top: 80px
+	@media only screen and (min-width : 1570px)
+		.item__text-block
+			align-self: flex-start
+			padding-top: 135px
+	@media only screen and (min-width : 1750px)
+		.item__text-block
+			align-self: flex-start
+			padding-top: 195px
+.firstscreen__item_5
+	background: url('/img/firstscreen/5-s.jpg') center bottom no-repeat
+	max-width: 100%
+	height: auto
+	min-height: 820px
+	padding-bottom: 0
+	.item__header_firstscreen
+	.item__description_firstscreen
+		padding: 0 17%
+	.item__header, .item__description
+		color: #fff
+	+mymed(mscr)
+		background: url('/img/firstscreen/5-m.jpg') center bottom no-repeat
+		max-width: 100%
+		height: auto
+		min-height: 680px
+		.item__header_firstscreen
+			padding: 0
+		.item__description_firstscreen
+			padding: 0
+			padding-right: 175px
+	+mymed(lscr)
+		background: url('/img/firstscreen/5-l.jpg') center bottom no-repeat
+		max-width: 100%
+		min-height: 860px
+		height: auto
+		.item__header_firstscreen
+			padding: 0
+		.item__description_firstscreen
+			padding: 0
+.carousel
+	position: relative
+.slick-dots
+	top: 45%
+	left: -70px
+	margin-left: 50%
+	bottom: auto
+	width: auto
+	display: flex
+	align-items: center
+	height: 12px
+	+mymed(mscr)
+		top: auto
+		margin-left: 4.4429%
+		left: 0
+		bottom: 15%
+	+mymed(lscr)
+		flex-direction: column
+		top: 50%
+		margin-left: 0
+		left: 95%
+		bottom: auto
+		margin-top: -78px
+.slick-dots li.slick-active
+	margin-top: 0
+	button
+		width: 12px
+		height: 12px
+		padding-top: 0
+	button:before
+		width: 12px
+		height: 12px
+		background: #e42342
+		opacity: 1
+		content: ''
+		top: 0
+		bottom: 0
+	+mymed(lscr)
+		margin-top: 20px
+		margin-left: 0
+		left: 0
+		button:before
+			left: 0
+.slick-dots li
+	width: 12px
+	height: 12px
+	margin: 0
+	margin-left: 20px
+	margin-top: 2px
+	+mymed(lscr)
+		margin-left: 2px
+		margin-top: 20px
+.slick-dots li:nth-child(1)
+	margin-left: 0
+	+mymed(lscr)
+		margin-left: 2px
+		margin-top: 0
+.slick-dots li button
+	width: 12px
+	height: 12px
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before
+	background: #e42342
+	cursor: pointer
+.slick-dots li button:before
+	content: ''
+	background: #2f2f2f
+	width: 8px
+	height: 8px
+	border-radius: 50%
+	opacity: 1
+	top: 1px
+	+mymed(lscr)
+		top: 0
+		left: 1px
+.slick-initialized .slick-slide 
+	+mymed(lscr)
+		display: flex
+.slick-dotted.slick-slider
+	margin-bottom: 0
+.slick-prev
+	left: 25px
+.slick-next
+	right: 25px

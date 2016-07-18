@@ -1,0 +1,101 @@
+.footer
+	display: flex
+	flex-direction: column
+	align-items: center
+	text-align: center
+	+mymed(mscr)
+		text-align: left
+		align-items: flex-start
+	+mymed(lscr)
+		flex-direction: row
+		justify-content: space-between
+		align-items: flex-start
+.footer-container
+	background-color:  #fff
+	padding: 12.5% 7.8125%
+	+mymed(mscr)
+		padding: 4.6%
+	+mymed(lscr)
+		width: 1000px
+		padding: 30px 0
+	+mymed(xscr)
+		width: 1180px
+.footer__block
+	margin-bottom: 10%
+	+mymed(mscr)
+		margin-bottom: 3.57%
+	+mymed(lscr)
+		display: flex
+		width: auto
+		margin-bottom: 0
+		padding: 0 10px
+.footer__block_company
+	+mymed(lscr)
+		flex-direction: column
+		width: 39%
+.footer__block:last-child
+	margin-bottom: 0
+.footer__text
+	font-size: 13px
+	font-size: 4.0625vw
+	color: #333232
+	+ptsans
+	+mymed(mscr)
+		font-size: 13px
+		font-size: 1.71vw
+	+mymed(lscr)
+		font-size: rem(13)
+.footer__text_grey
+	color: #9a9c9e
+.footer__text_copy
+	margin-bottom: 8%
+	+mymed(mscr)
+		margin-bottom: 0
+.footer__text_bold
+	margin-left: 1%
+	&:hover
+		color: #007aec
+	&:active
+		color: darken(#007aec, 10%)
+	+mymed(lscr)
+		margin-left: 2%
+.footer__block_contacts
+	width: 100%
+	display: flex
+	flex-direction: column
+	+mymed(mscr)
+		flex-direction: row
+		justify-content: flex-start
+	+mymed(lscr)
+		width: 27%
+		flex-direction: column
+		align-items: flex-start
+.contacts
+	width: 100%
+	display: flex
+	flex-direction: row
+	justify-content: center
+	margin-bottom: 3%
+	&:last-child
+		margin-bottom: 0
+	+mymed(mscr)
+		justify-content: flex-start
+		margin-bottom: 0
+		width: 40%
+	+mymed(lscr)
+		width: 100%
+.footer__block
+	margin-left: 0
+
+.footer__block_dev
+	display: flex
+	flex-direction: column
+	+mymed(mscr)
+		flex-direction: row
+		width: 100%
+	+mymed(lscr)
+		justify-content: flex-end
+		text-align: right
+		flex-direction: column
+		width: 18%
+

@@ -1,0 +1,115 @@
+.section_steps
+.section__header_steps
+	+mymed(mscr)
+		padding: 0 5%
+.steps-list
+	display: flex
+	flex-direction: column
+	+mymed(mscr)
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+.steps-list__item
+	flex-direction: column
+	text-align: center
+	align-items: center
+	margin-bottom: 14.25%
+	position: relative
+	&:last-child
+		margin-bottom: 0
+		.item__description_steps
+			margin-bottom: 0
+	+mymed(mscr)
+		width: 30%
+		text-align: left
+		align-items: flex-start
+		margin-bottom: 5%
+		&:after
+				content: ''
+				width: 43px
+				height: 9px
+				background: url('/img/steps/arrow.png') center center no-repeat
+				background-size: contain
+				position: absolute
+				top: 17%
+				right: 20%
+		&:nth-child(n+4)
+			margin-bottom: 0
+		&:last-child
+			&:after
+				width: 0
+				height: 0
+	+mymed(lscr)
+		margin-bottom: 0
+		flex: 1
+		&:after
+			top: 11%
+		&:first-child
+			padding-left: 0
+	+mymed(xscr)
+		padding: 0 10px
+		&:first-child
+			padding-left: 0
+.steps-list__item-separator
+
+.steps-list__item-separator_4, .steps-list__item-separator_7, .steps-list__item-separator_9
+	display: none
+
+.item-logo
+
+.item-logo__image
+
+.item__number_steps
+	margin-bottom: 5%
+	font-size: 62.675px
+	font-size: 13vw
+	line-height: 62.675px
+	line-height: 13vw
+	+proximaB
+	color: #252525
+	opacity: 0.2
+	+mymed(mscr)
+		font-size: 60px
+		font-size: 7.8vw
+		line-height: 60px
+		line-height: 7.8vw
+	+mymed(lscr)
+		font-size: rem(60)
+		line-height: rem(60)
+.item__header_steps
+	margin-bottom: 4.3%
+	font-size: 17px
+	font-size: 5.3125vw
+	+ptsansB
+	+mymed(mscr)
+		font-size: 17px
+		font-size: 2.23vw
+	+mymed(lscr)
+		font-size: rem(15)
+		padding: 0 5px 
+	+mymed(xscr)
+		font-size: rem(17)
+		padding: 0
+.item__description_steps
+	margin-bottom: 7.15%
+	font-size: 15px
+	font-size: 4.6875vw
+	+ptsans
+	+mymed(mscr)
+		font-size: 15px
+		font-size: 1.97vw
+	+mymed(lscr)
+		font-size: rem(13)
+		padding: 0 5px
+	+mymed(xscr)
+		font-size: rem(15)
+		padding: 0
+.button-cta_steps
+	font-size: 12px
+	font-size: 3.75vw
+	padding: 3.51% 7.145%
+	+mymed(mscr)
+		font-size: 12px
+		font-size: 1.57vw
+	+mymed(lscr)
+		font-size: rem(12)

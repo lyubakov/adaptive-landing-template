@@ -1,0 +1,214 @@
+.section_lastcta
+	background: url('/img/lastcta/bg-s.jpg') 0 0 no-repeat
+	background-size: cover
+	color: #fff
+	+mymed(mscr)
+		background: url('/img/lastcta/bg-m.jpg') 0 0 no-repeat
+		background-size: cover
+		padding-top: 11%
+		padding-bottom: 11%
+	+mymed(lscr)
+		background: url('/img/lastcta/bg-m.jpg') 0 0 no-repeat
+		background-size: cover
+		padding-top: 75px
+		padding-bottom: 80px
+.form
+	margin: 0 auto
+	text-align: center
+	display: flex
+	flex-direction: column
+	justify-content: center
+.form__header
+	margin-bottom: 7.5%
+
+.form__header_lastcta
+	color: #fff
+	font-size: 25px
+	font-size: 7.8125vw
+	+proxima
+	+mymed(mscr)
+		font-size: 35px
+		font-size: 4.6vw
+		margin-bottom: 4%
+	+mymed(lscr)
+		font-size: rem(35)
+		margin-bottom: 2%
+.form__description
+	margin-bottom: 10%
+.form__description_lastcta
+	color: #fff
+	font-size: 17px
+	font-size: 5.3125vw
+	+ptsans
+	+mymed(mscr)
+		font-size: 17px
+		font-size: 2.23vw
+		margin-bottom: 5%
+		padding: 0 10%
+	+mymed(lscr)
+		font-size: rem(17)
+		padding: 0 25%
+		margin-bottom: 2%
+.form-inputs
+	margin-bottom: 6.5%
+.form__inputs_lastcta
+	display: flex
+	flex-direction: column
+	align-items: center
+	+mymed(mscr)
+		flex-direction: row
+		justify-content: space-around
+		align-items: center
+		margin-bottom: 0
+.form__input
+	background-color: transparent
+	border: 1px solid #fff
+	margin-bottom: 3.9%
+	width: 100%
+	text-align: center
+	padding: 5.7% 0
+	box-sizing: border-box
+	color: #fff
+	border-radius: 3px
+	font-size: 15px
+	font-size: 4.6875vw
+	+ptsans
+	+placeholder
+		opacity: 1
+	+mymed(mscr)
+		font-size: 15px
+		font-size: 1.97vw
+		width: 34.2%
+		text-align: left
+		padding: 2% 3.5%
+		margin-bottom: 0
+	+mymed(lscr)
+		width: 40%
+		font-size: rem(15)
+		padding: 9.5px 20px
+.form__input:nth-child(2)
+	margin-left: 0
+.form__input:last-child
+	margin-bottom: 0
+
+.form__button
+	text-transform: uppercase
+	width: 100%
+	padding: 7.14% 0
+	font-size: 12px
+	font-size: 3.75vw
+	border-radius: 3px
+	+ptsansB
+	+mymed(mscr)
+		font-size: 12px
+		font-size: 1.57vw
+		padding: 2.356%
+		width: 25.7%
+	+mymed(lscr)
+		font-size: rem(12)
+		width: auto
+		padding: 12px 25px
+.form_hidden
+	display: none
+	background-color: #fff
+	border: 1px solid $third-color
+	border-radius: 5px
+	width: 100%
+	padding-bottom: 30px
+	.form__header
+		padding-top: 5%
+		width: 280px
+		margin: 0 auto
+		+proxima
+		text-align-last: 
+		font-size: rem(22.5)
+		margin-bottom: 25px
+	.form__label
+		color: #5a5a5a
+		+ptsans
+		font-size: rem(15)
+		text-align: left
+	.form__input
+		display: block
+		margin: 0 auto
+		border: 1px solid #e0e0e0
+		border-radius: 2px
+		color: #5a5a5a
+		+ptsans
+		font-size: rem(15)
+		padding: 14px
+		text-align: left
+	.form-inputs
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			width: 280px;
+			margin: 0 auto;
+	.form__input
+		width: 280px
+		margin-bottom: 20px
+		&:hover
+			cursor: pointer
+	.form__label
+		margin-bottom: 12px
+		&:hover
+			cursor: pointer
+	.form__button
+		width: 280px
+		padding-top: 20px
+		padding-bottom: 20px
+		font-size: rem(17)
+	+mymed(mscr)
+		width: 580px
+		height: 580px
+		border-radius: 50%
+		left: 0
+		right: 0
+		padding-bottom: 0
+		.form-container
+			position: relative
+			width: 580px
+			height: 580px
+		.grad
+			background: rgb(198,50,105);
+			background: -moz-linear-gradient(45deg,  rgba(198,50,105,1) 0%, rgba(130,84,195,1) 100%);
+			background: -webkit-linear-gradient(45deg,  rgba(198,50,105,1) 0%,rgba(130,84,195,1) 100%);
+			background: linear-gradient(45deg,  rgba(198,50,105,1) 0%,rgba(130,84,195,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c63269', endColorstr='#8254c3',GradientType=1 );
+			width: 580px
+			height: 580px
+			bottom: -22px
+			left: -10px
+			position: absolute
+			border-radius: 50%
+			z-index: 1
+		.form__content
+			position: relative
+			z-index: 2
+			background: #fff
+			width: 580px
+			height: 580px
+			border-radius: 50%
+		.form__header
+			padding-top: 23%
+			+proxima
+			font-size: rem(25)
+			text-align: center
+			margin-bottom: 25px
+
+	.form__header-stick
+	
+	.form__header
+	
+	.form__header-block
+		margin: 0 auto
+	
+
+	
+	.form__input:nth-child(2)
+	
+	.form__button
+		display: block
+		margin: 0 auto
+	
+

@@ -1,0 +1,129 @@
+.section_whyme
+	background: url('/img/whyme/bg-s.png') center center no-repeat
+	background-size: cover
+	+mymed(mscr)
+		background: url('/img/whyme/bg-m.jpg') center center no-repeat
+		background-size: cover
+	+mymed(lscr)
+		background: url('/img/whyme/bg-l.jpg') center top no-repeat
+		max-width: 100%
+		height: auto
+		min-height: 885px
+		padding-bottom: 0
+.whyme__lists
+	+mymed(mscr)
+		display: flex
+		justify-content: space-between
+.whyme-list
+	+mymed(mscr)
+		width: 45%
+		.whyme-list__item:last-child
+			&:after
+				top: 30%
+			&:before
+				top: 30%
+			.whyme-list__item-description
+				margin-bottom: 0
+	+mymed(lscr)
+		width: 275px
+.whyme-list_1
+	+mymed(mscr)
+		.whyme-list__item
+			align-items: flex-start
+			&:after
+				content: ''
+				width: 20px
+				height: 13.3px
+				background: url('/img/whyme/taxi.svg') center center no-repeat
+				fill: #252525
+				background-size: contain
+				position: absolute
+				margin-top: -20px
+				margin-left: -13.3px
+				top: 20%
+				left: 50%
+
+.whyme-list_2
+	+mymed(mscr)
+		.whyme-list__item
+			align-items: flex-end
+			&:before
+				content: ''
+				width: 20px
+				height: 13.3px
+				background: url('/img/whyme/taxi.svg') center center no-repeat
+				fill: #252525
+				background-size: contain
+				position: absolute
+				margin-top: -20px
+				margin-right: -13.3px
+				top: 20%
+				right: 50%
+
+.whyme-list__item
+	flex-direction: column
+	text-align: center
+	align-items: center
+	position: relative
+	+mymed(mscr)
+		justify-content: baseline
+
+
+.whyme-list__item-number
+	margin-bottom: 4.5%
+	font-size: 80px
+	font-size: 25vw
+	line-height: 80px
+	line-height: 25vw
+	position: relative
+	+proximaB
+	color: #252525
+	opacity: 0.2
+	+mymed(mscr)
+		font-size: 50px
+		font-size: 10.5vw
+		line-height: 50px
+		line-height: 10.5vw
+		margin-bottom: 4.28%
+	+mymed(lscr)
+		font-size: rem(80)
+		line-height: rem(80)
+.whyme-list__item-number_1
+	+mymed(mscr)
+
+.whyme-list__item-header
+	margin-bottom: 7.15%
+	font-size: 17px
+	font-size: 5.3125vw
+	+ptsansB
+	+mymed(mscr)
+		font-size: 17px
+		font-size: 2.23vw
+		margin-bottom: 3.5%
+	+mymed(lscr)
+		font-size: rem(17)
+.whyme-list__item-header_1
+	+mymed(mscr)
+		text-align: left
+
+.whyme-list__item-header_2
+	+mymed(mscr)
+		text-align: right
+.whyme-list__item-description
+	margin-bottom: 15%
+	font-size: 15px
+	font-size: 4.6875vw
+	+ptsans
+	+mymed(mscr)
+		font-size: 15px
+		font-size: 1.91vw
+		margin-bottom: 19.04%
+	+mymed(lscr)
+		font-size: rem(15)
+		margin-bottom: 60px
+.whyme-list__item-description_1
+	+mymed(mscr)
+		text-align: left
+.whyme-list__item-description_2
+	+mymed(mscr)
+		text-align: right

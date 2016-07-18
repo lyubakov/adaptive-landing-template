@@ -1,0 +1,11 @@
+-
+	var videos = [
+		[],
+		[]
+	]
+section.section.section_video
+	.videos
+		each item in videos
+			.video
+				a.video__link(href="#video-#{item[0]}" class="video__link_#{item[0]}")
+				iframe(width="100%" height="800px" src="#{item[1]}" frameborder="0" allowfullscreen id="video-#{item[0]}" class="iframe")

@@ -1,0 +1,17 @@
+-
+	var painLi = [
+		[],
+		[],
+		[],
+		[],
+		[],
+		[]
+	]
+section.section.section_pain
+	.container
+		h3(id="pain").section__header 
+		ul.pain-list
+			each item in painLi
+				li.pain-list__item.list-item
+					img(src="#{item[0]}", alt="" class="pain-list__logo")
+					p.pain-list__item-description #{item[1]}

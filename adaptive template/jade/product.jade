@@ -1,0 +1,29 @@
+-
+	var productLi = [
+		[],
+		[],
+	]
+section.section.section_product
+	.container
+		h1(id="product").section__header Триколор ТВ — лучшее решение для дома
+		ul.product-list
+			//- li.product-list__item.product-list__item_recieve.list-item
+			//- 		.product-list__logo-block
+			//- 			img(src="", alt="" class="")
+			//- 		.product-list__text
+			//- 			p.product-list__item-title 
+			//- 				span.product-list__item-price 
+			//- 			p.product-list__item-description 
+			//- 			button.button-cta.button-cta_product.modalCall 
+			//- 				img.button-img(src="", alt="")
+			//- .reflex
+			each item in productLi
+				li.product-list__item.list-item
+					.product-list__logo-block
+						img(src="#{item[0]}", alt="" class="")
+					.product-list__text
+						p.product-list__item-title #{item[1]} 
+							span.product-list__item-price #{item[2]}
+						p.product-list__item-description #{item[3]}
+						button.button-cta.button-cta_product.modalCall
+							img.button-img(src="", alt="")

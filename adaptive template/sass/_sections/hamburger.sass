@@ -1,0 +1,207 @@
+.call-block
+	display: none
+	+mymed(mscr)
+		display: flex
+
+.header_big
+	display: none
+	+mymed(mscr)
+		display: flex
+		padding: 4.55% 3.9% 5.26% 3.9%
+		background: #fff 
+	+mymed(lscr)
+		width: 1000px
+		margin: 0 auto
+		padding: 20px 0 30px 0
+	+mymed(xscr)
+		width: 1180px
+.header-container
+	position: fixed
+	width: 100%
+	z-index: 2
+	background: #fff
+	+mymed(mscr)
+		box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.19)
+
+.header_mobile
+	box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.19)
+	top: 0
+	background: #fff
+	justify-content: center
+	position: relative
+	z-index: 1
+	width: 100%
+	+mymed(mscr)
+		display: none
+
+.header__hamburger
+	margin-left: auto
+	border-left: 1px solid #e0e0e0
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 28.44%
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+.hamburger__img
+	width: 100%
+
+.hamburger__img_close
+	display: none
+
+.logo
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-ms-align-items: center
+	align-items: center
+	width: 80%
+	justify-content: center
+	padding: 2.245% 0
+	+mymed(mscr)
+		width: 58.57%
+		justify-content: flex-start
+		padding: 0
+		align-self: flex-end
+	+mymed(lscr)
+		width: 57.6%
+		align-self: center
+.logo_img
+	width: 32.5625%
+	+mymed(lscr)
+		width: 140px
+
+.logo__name-block
+	+mymed(mscr)
+		display: flex
+		flex-direction: column
+		width: 59.67%
+		margin-left: 5%
+	+mymed(lscr)
+		flex-direction: row
+		align-items: center
+		margin-left: 1%
+		width: 76%
+		min-height: 76px
+	+mymed(xscr)
+		margin-left: 3.18%
+.logo_name
+	width: 48%
+	margin-left: 3%
+	+mymed(mscr)
+		margin: 0
+		width: 100%
+		margin-bottom: 2.3%
+	+mymed(lscr)
+		width: 250px
+		margin-bottom: 0
+.logo__text
+	+mymed(mscr)
+		+proxima
+		font-size: 15px
+		font-size: 1.97vw
+		padding-left: 1%
+	+mymed(lscr)
+		font-size: rem(14)
+		padding-left: 3%
+	+mymed(xscr)
+		font-size: rem(15)
+		padding-left: 5.03%
+.call-block_mobile
+	display: flex
+	margin-top: -1000px
+	flex-direction: column
+	background: #ebebeb
+	width: 100%
+	z-index: 1
+	box-shadow: 2.302px 32.92px 40px 0px rgba(0, 0, 0, 0.37);
+	+mymed(mscr)
+		display: none
+
+
+.call-block__item_mobile
+	padding: 7.8125% 0
+	font-size: 20px
+	font-size: 6.25vw
+	text-align: center
+	border-top: 1px solid #e0e0e0
+	+proxima
+
+	&:active, &:focus, &:hover
+		color: #fff
+		outline: 0
+		background: rgb(126,86,201);
+		background: -moz-linear-gradient(45deg,  rgba(126,86,201,1) 18%, rgba(228,35,66,1) 115%);
+		background: -webkit-linear-gradient(45deg,  rgba(126,86,201,1) 18%,rgba(228,35,66,1) 115%);
+		background: linear-gradient(45deg,  rgba(126,86,201,1) 18%,rgba(228,35,66,1) 115%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e56c9', endColorstr='#e42342',GradientType=1);
+.call-block__item
+	+proxima
+	+mymed(mscr)
+		margin-left: auto
+	+mymed(lscr)
+		margin-left: 0
+.call-block_big
+	+mymed(mscr)
+		display: flex
+		flex-direction: column
+		width: 29.2%
+	+mymed(lscr)
+		flex-direction: row
+		width: 38.2%
+		align-items: center
+		justify-content: flex-end
+.call-block_phone
+	display: flex
+	order: -1
+	align-items: center
+	margin-bottom: 2%
+	+mymed(lscr)
+		width: 200px
+		margin-bottom: 0
+.call-block__item_number
+	order: -1
+	font-size: 20px
+	font-size: 2.63vw
+	+mymed(lscr)
+		font-size: rem(20)
+		margin-left: 4px
+	+mymed(xscr)
+.call-block_image
+	order: -2
+	width: 5.13vw
+	+mymed(lscr)
+		width: 39px
+.call-block__item_callback
+	font-size: 12px
+	font-size: 1.57vw
+	padding: 6.3% 12.6%
+	+mymed(lscr)
+		font-size: rem(12)
+		padding: rem(13) rem(25)
+		margin-left: 15px
+	+mymed(xscr)
+		margin-left: 25px
+.header__label
+	display: flex
+	width: 33%
+	height: 33%
+
+.header__toggler
+	display: none
+	&:checked 
+		~ .call-block_mobile
+				+transition()
+				margin-top: 0
+		~ .header_mobile
+			box-shadow: none
+			.header__hamburger
+				background: #ebebeb
+				.hamburger__img
+					display: none
+				.hamburger__img_close
+					display: flex

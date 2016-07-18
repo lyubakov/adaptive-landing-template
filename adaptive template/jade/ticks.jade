@@ -1,0 +1,17 @@
+-
+	var ticksLi = [
+		[],
+		[],
+		[],
+		[]
+	]
+section.section.section_ticks(id="ticks")
+	.container
+		h2.section__header 
+		ul.ticks-list
+			each item in ticksLi
+				li.ticks-list__item.list-item
+					.ticks-list__logo
+						img(src="#{item[0]}", alt="" class="")
+					p.ticks-list__item-description #{item[1]}
+						span.ticks-list__item-awesomeness #{item[2]}

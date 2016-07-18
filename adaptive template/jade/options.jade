@@ -1,0 +1,27 @@
+-
+	var optionsLi = [
+		[],
+		[],
+		[],
+		[],
+		[],
+	]
+
+section(id="options").section.section_options
+	.container.container_options
+		p.section__header.section__header_options 
+		p.section__description.section__description_options 
+		.options
+			each item in optionsLi
+				.options-list__item.list-item(class="options-list__item_#{item[0]}")
+					.mr-white
+					.options__text
+						p.options-list__item-number #{item[5]}
+						p.options-list__item-title #{item[1]} 
+						p.options-list__item-title-description #{item[2]}
+						.options__divider
+						p.options-list__item-price #{item[3]}
+						.options__divider.options__divider_last
+						p.options-list__item-description #{item[4]}
+						button.button-cta.button-cta_options.modalCall Подключить
+					.white-mr
